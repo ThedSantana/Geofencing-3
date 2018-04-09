@@ -11,8 +11,9 @@ import java.util.HashMap;
 public class Constants {
 
 
-    public static final String GEOFENCE_ID_STAN_UNI = "STAN_UNI";
-    public static final float GEOFENCE_RADIUS_IN_METERS = 100;
+    public static final String FIRST_PLACE_ID = "UBLE";
+    public static final String SECOND_PLACE_ID = "FAC_CONTA";
+    public static final float GEOFENCE_RADIUS_IN_METERS = 150;
 
     /**
      * Map for storing information about stanford university in the Stanford.
@@ -20,7 +21,8 @@ public class Constants {
     public static final HashMap<String, LatLng> AREA_LANDMARKS = new HashMap<String, LatLng>();
 
     static {
-        // stanford university.
-        AREA_LANDMARKS.put(GEOFENCE_ID_STAN_UNI, new LatLng(37.427476, -122.170262));
+        // youre location or locations.
+        AREA_LANDMARKS.put(FIRST_PLACE_ID, new LatLng(19.324218, -99.184614));
+        AREA_LANDMARKS.put(SECOND_PLACE_ID, new LatLng(19.324218, -99.184614));
     }
 }
